@@ -1,6 +1,6 @@
 :root {
   --text-color: #000000;
-  --primary-color:#1f1f1f;
+  --primary-color: #1f1f1f;
   --bg-color: #ffffff;
   --color-blue: #0e4f97;
 }
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 .m-block-md {
-  margin-block: 20px;
+  margin-block-end: 20px;
 }
 nav {
   color: white;
@@ -26,13 +26,11 @@ body {
 }
 section {
   width: 100%;
-  padding-inline: 20px;
   max-width: 1200px;
   margin: 0 auto;
   border-bottom: 1px solid var(--primary-color);
   margin-block-end: 20px;
 }
-
 
 .section_two,
 .section_three,
@@ -136,7 +134,7 @@ a.link {
 .grid_layout_1 {
   display: grid;
   grid-template-columns: 1fr 0.6fr 300px;
-  grid-template-rows: 650px;
+  grid-template-rows: 570px;
   align-items: stretch;
   gap: 20px;
 }
@@ -399,8 +397,6 @@ header {
   visibility: visible;
 }
 
-
-
 /* Responsive Styles */
 @media (max-width: 992px) {
   .search-container {
@@ -429,6 +425,9 @@ header {
 /* Banner Section */
 .banner {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .banner_image {
   width: 100%;
@@ -476,6 +475,7 @@ header {
   border: 2px dashed #e0e0e0;
   align-self: start;
   display: flex;
+  z-index: 1;
 }
 .fb_weight .fb_frame {
   margin: 0 auto;
@@ -546,6 +546,8 @@ section two start */
 
 .section_two {
   display: grid;
+  background-color: var(--bg-color);
+  z-index: 3;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   .link {
@@ -620,4 +622,78 @@ footer .link {
 }
 footer .link:nth-child(2) {
   border-inline: 1px solid var(--text-color);
+}
+
+/* details page style  */
+.details_ads_left .times {
+  padding: 20px;
+  h4 {
+    padding-bottom: 7px;
+  }
+}
+.social-icons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.twitter {
+  background: #000000;
+  color: #fff;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.messenger {
+  background: #0084ff;
+}
+.icon.link {
+  border-radius: 0px;
+  display: flex;
+  i {
+    border: 2px solid;
+    padding: 2px;
+  }
+}
+
+.details_content .title_type_1 {
+  padding-block-end: 20px;
+}
+
+.details_tags {
+  display: flex;
+  align-items: center;
+  padding-block-end: 20px;
+}
+.tag .link {
+  border: 1px solid #e1e1e1;
+  padding: 6px 8px;
+  font-size: 12px;
+  margin: 6px;
+  border-radius: 5px;
+  background-color: #eee;
 }
