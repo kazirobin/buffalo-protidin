@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Facebook Page Plugin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #1877F2; /* Facebook blue */
+            margin-bottom: 10px;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        @media (min-width: 768px) {
+            .content-wrapper {
+                flex-direction: row;
+            }
+        }
+        
+        .main-content {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .fb-plugin-container {
+            flex: 0 0 340px;
+            align-self: start;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .fb-plugin-wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 176.47%; /* 600/340 = 1.7647 ratio */
+            overflow: hidden;
+            border: 2px dashed #e0e0e0;
+            border-radius: 8px;
+        }
+        
+        .fb-plugin-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .responsive-demo {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .device-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .device-btn {
+            padding: 8px 16px;
+            background-color: #1877F2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .device-btn:hover {
+            background-color: #0e5a9d;
+        }
+        
+        .demo-frame {
+            width: 100%;
+            max-width: 340px;
+            height: 600px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin: 0 auto;
+            overflow: hidden;
+            resize: horizontal;
+            background-color: white;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Responsive Facebook Page Plugin</h1>
+            <p>This implementation ensures the Facebook page plugin looks great on all devices</p>
+        </header>
+        
+        <div class="content-wrapper">
+            <div class="main-content">
+                <h2>About This Implementation</h2>
+                <p>This responsive design uses a padding-bottom technique to maintain the correct aspect ratio of the Facebook page plugin. The iframe will automatically resize to fit its container while preserving the proper height-to-width ratio.</p>
+                
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Maintains proper aspect ratio on all screen sizes</li>
+                    <li>Uses CSS padding technique for responsive iframes</li>
+                    <li>Works on mobile, tablet, and desktop devices</li>
+                    <li>Clean, modern design that matches Facebook's aesthetic</li>
+                </ul>
+                
+                <h3>How It Works:</h3>
+                <p>The container for the iframe has a height of 0 and a padding-bottom percentage that matches the aspect ratio of the iframe (600px height / 340px width = 176.47%). The iframe is then positioned absolutely to fill this container.</p>
+            </div>
+            
+            <div class="fb-plugin-container">
+                <h3>Our Facebook Page</h3>
+                <p>Follow us for updates and news!</p>
+                
+                <div class="fb-plugin-wrapper">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbuffaloprotidin&amp;tabs=timeline&amp;width=340&amp;height=600&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true" 
+                            scrolling="no" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="responsive-demo">
+            <h2>Responsive Demo</h2>
+            <p>Resize the frame below to see how the Facebook plugin adapts to different widths:</p>
+            
+            <div class="demo-frame">
+                <div class="fb-plugin-wrapper" style="height: 100%; padding-bottom: 0;">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbuffaloprotidin&amp;tabs=timeline&amp;width=340&amp;height=600&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true" 
+                            scrolling="no" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Responsive Facebook Page Plugin Implementation &copy; 2023</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple script to demonstrate responsive behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            const demoFrame = document.querySelector('.demo-frame');
+            const originalWidth = demoFrame.offsetWidth;
+            
+            // Reset button functionality
+            document.getElementById('reset-btn').addEventListener('click', function() {
+                demoFrame.style.width = originalWidth + 'px';
+            });
+            
+            // Mobile button functionality
+            document.getElementById('mobile-btn').addEventListener('click', function() {
+                demoFrame.style.width = '320px';
+            });
+            
+            // Tablet button functionality
+            document.getElementById('tablet-btn').addEventListener('click', function() {
+                demoFrame.style.width = '768px';
+            });
+            
+            // Desktop button functionality
+            document.getElementById('desktop-btn').addEventListener('click', function() {
+                demoFrame.style.width = '1024px';
+            });
+        });
+    </script>
+</body>
+</html>

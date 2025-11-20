@@ -5,9 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buffalo Protidin</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <nav>This is navbar</nav>
+        <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="	https://buffaloprotidin.com/storage/app/public/home/9WZtUqyMKvnXnAtUA7F6AuUt8WVQjIPsXXirv1Hn.png" alt="" class="img" style="width: 100px;">
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">মূলপাতা</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">বাফলো</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">বাংলাদেশ</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">আমেরিকা</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">বিশ্ব</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">ফিচার</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">প্রযুক্তি</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="খুঁজুন...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div> 
+        <div class="mobile-search">
+            <input type="text" class="mobile-search-input" placeholder="খুঁজুন...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">মূলপাতা</a></li>
+            <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">বাফলো</a></li>
+            <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">বাংলাদেশ</a></li>
+            <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">আমেরিকা</a></li>
+            <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">বিশ্ব</a></li>
+            <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">ফিচার</a></li>
+            <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">প্রযুক্তি</a></li>
+        </ul>
+       
+    </div>
+
+    <div class="overlay"></div>
     <section>
       <div class="section_one grid_layout_1">
         <div class="banner">
@@ -90,7 +139,21 @@
           </div>
         </div>
 
-        <div class="fb_weight">Facebook weight</div>
+        <div class="fb_weight">
+          <div class="fb_frame">
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbuffaloprotidin&amp;tabs=timeline&amp;width=300&amp;height=600&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true"
+              width="100%"
+              height="600"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            >
+            </iframe>
+          </div>
+        </div>
       </div>
 
       <div class="section_two">
@@ -113,7 +176,7 @@
     </section>
 
     <section>
-      <h4 class="title_type_3"><a href="#" class="link">বাফলো</a></h4>
+      <h4 class="section_title"><a href="#" class="link">বাফলো</a></h4>
       <div class="section_three grid_layout_2">
         <div class="news_cards">
           <div class="news_cards_item">
@@ -128,6 +191,7 @@
               </h6></a
             >
           </div>
+
           <div class="news_cards_item">
             <img
               src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
@@ -207,10 +271,9 @@
         </div>
       </div>
     </section>
-    
 
     <section>
-      <h4 class="title_type_3"><a href="#" class="link">আমেরিকা</a></h4>
+      <h4 class="section_title"><a href="#" class="link">আমেরিকা</a></h4>
       <div class="section_fore grid_layout_2">
         <div class="news_cards">
           <div class="news_cards_item">
@@ -219,7 +282,6 @@
               alt=""
               class="img"
             />
-            
           </div>
           <div class="news_cards_item">
             <img
@@ -227,7 +289,6 @@
               alt=""
               class="img"
             />
-           
           </div>
         </div>
         <div class="news_cards">
@@ -298,7 +359,7 @@
     </section>
 
     <section>
-      <h4 class="title_type_3"><a href="#" class="link">বাংলাদেশ</a></h4>
+      <h4 class="section_title"><a href="#" class="link">বাংলাদেশ</a></h4>
       <div class="section_five grid_layout_2">
         <div class="news_cards">
           <div class="news_cards_item">
@@ -307,7 +368,6 @@
               alt=""
               class="img"
             />
-            
           </div>
           <div class="news_cards_item">
             <img
@@ -315,7 +375,6 @@
               alt=""
               class="img"
             />
-           
           </div>
         </div>
         <div class="news_cards">
@@ -385,6 +444,252 @@
       </div>
     </section>
 
+    <section>
+      <h5 class="section_title">বিশ্ব</h5>
+      <div class="section_six grid_layout_3">
+        <div class="news_cards_item">
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <a href="#" class="link">
+            <h1 class="text_type_1">
+              বাফলোর এলমউড অ্যাভিনিউয়ে আইস অভিযানে ৪ জন গ্রেপ্তার
+            </h1>
+          </a>
+        </div>
+        <div class="news_cards_item">
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <a href="#" class="link">
+            <h1 class="text_type_1">
+              বাফলোর এলমউড অ্যাভিনিউয়ে আইস অভিযানে ৪ জন গ্রেপ্তার
+            </h1>
+          </a>
+        </div>
+        <div class="news_cards_item">
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <a href="#" class="link">
+            <h1 class="text_type_1">
+              বাফলোর এলমউড অ্যাভিনিউয়ে আইস অভিযানে ৪ জন গ্রেপ্তার
+            </h1>
+          </a>
+        </div>
+        <div class="news_cards_item">
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <a href="#" class="link">
+            <h1 class="text_type_1">
+              বাফলোর এলমউড অ্যাভিনিউয়ে আইস অভিযানে ৪ জন গ্রেপ্তার
+            </h1>
+          </a>
+        </div>
+        <div class="news_cards_item">
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <a href="#" class="link">
+            <h1 class="text_type_1">
+              বাফলোর এলমউড অ্যাভিনিউয়ে আইস অভিযানে ৪ জন গ্রেপ্তার
+            </h1>
+          </a>
+        </div>
+        <div class="news_cards_item">
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <a href="#" class="link">
+            <h1 class="text_type_1">
+              বাফলোর এলমউড অ্যাভিনিউয়ে আইস অভিযানে ৪ জন গ্রেপ্তার
+            </h1>
+          </a>
+        </div>
+        <div class="news_cards_item">
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <a href="#" class="link">
+            <h1 class="text_type_1">
+              বাফলোর এলমউড অ্যাভিনিউয়ে আইস অভিযানে ৪ জন গ্রেপ্তার
+            </h1>
+          </a>
+        </div>
+        <div class="news_cards_item">
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <a href="#" class="link">
+            <h1 class="text_type_1">
+              বাফলোর এলমউড অ্যাভিনিউয়ে আইস অভিযানে ৪ জন গ্রেপ্তার
+            </h1>
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="section_seven grid_layout_3">
+        <div class="news_cards_item">
+          <a href="#" class="link">
+            <h5 class="section_title m-block-md">খেলা</h5>
+          </a>
+
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+
+          <div class="news_list_1_item">
+            <a href="#" class="link">
+              শেখ হাসিনা ও আসাদুজ্জামানের মৃত্যুদণ্ড, চৌধুরী মামুনের ৫ বছর
+              কারাদণ্ড
+            </a>
+          </div>
+          <div class="news_list_1_item">
+            <a href="#" class="link">
+              শেখ হাসিনা ও আসাদুজ্জামানের মৃত্যুদণ্ড, চৌধুরী মামুনের ৫ বছর
+              কারাদণ্ড
+            </a>
+          </div>
+          <div class="news_list_1_item">
+            <a href="#" class="link">
+              শেখ হাসিনা ও আসাদুজ্জামানের মৃত্যুদণ্ড, চৌধুরী মামুনের ৫ বছর
+              কারাদণ্ড
+            </a>
+          </div>
+        </div>
+
+        <div class="news_cards_item">
+          <a href="#" class="link">
+            <h5 class="section_title m-block-md">প্রযুক্তি</h5>
+          </a>
+
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+
+          <div class="news_list_1_item">
+            <a href="#" class="link">
+              শেখ হাসিনা ও আসাদুজ্জামানের মৃত্যুদণ্ড, চৌধুরী মামুনের ৫ বছর
+              কারাদণ্ড
+            </a>
+          </div>
+          <div class="news_list_1_item">
+            <a href="#" class="link">
+              শেখ হাসিনা ও আসাদুজ্জামানের মৃত্যুদণ্ড, চৌধুরী মামুনের ৫ বছর
+              কারাদণ্ড
+            </a>
+          </div>
+        </div>
+
+        <div class="news_cards_item">
+          <a href="#" class="link">
+            <h5 class="section_title m-block-md">বিনোদন</h5>
+          </a>
+
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <div class="news_list_1_item">
+            <a href="#" class="link">
+              শেখ হাসিনা ও আসাদুজ্জামানের মৃত্যুদণ্ড, চৌধুরী মামুনের ৫ বছর
+              কারাদণ্ড
+            </a>
+          </div>
+          <div class="news_list_1_item">
+            <a href="#" class="link">
+              শেখ হাসিনা ও আসাদুজ্জামানের মৃত্যুদণ্ড, চৌধুরী মামুনের ৫ বছর
+              কারাদণ্ড
+            </a>
+          </div>
+        </div>
+
+        <div class="news_cards_item">
+          <a href="#" class="link">
+            <h5 class="section_title m-block-md">ফিচার</h5>
+          </a>
+
+          <img
+            src="https://buffaloprotidin.com/storage/app/public/media/SLFsz9Otgafd2djataOTWYx5vTWtszwiKi6u9YFe.jpg"
+            alt=""
+            class="img"
+          />
+          <div class="news_list_1_item">
+            <a href="#" class="link">
+              শেখ হাসিনা ও আসাদুজ্জামানের মৃত্যুদণ্ড, চৌধুরী মামুনের ৫ বছর
+              কারাদণ্ড
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <img src="	https://buffaloprotidin.com/storage/app/public/home/9WZtUqyMKvnXnAtUA7F6AuUt8WVQjIPsXXirv1Hn.png" alt="" class="img">
+      <b class="footer_text">Editor & Publisher: Sohel Mahmud | 1389 Kensington Ave, Buffalo, NY, USA</b>
+    </section>
+    <footer>
+      <a href="#" class="link">About</a>
+      <a href="#" class="link">Disclaimer & Privacy Policy</a>
+      <a href="#" class="link">Contact</a>
+    </footer>
+
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const closeMenu = document.querySelector('.close-menu');
+            const overlay = document.querySelector('.overlay');
+            const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+            // Toggle mobile menu
+            hamburger.addEventListener('click', function() {
+                mobileMenu.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Close mobile menu
+            function closeMobileMenu() {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+            closeMenu.addEventListener('click', closeMobileMenu);
+            overlay.addEventListener('click', closeMobileMenu);
+
+            // Close menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+        });
+    </script>
   </body>
 </html>
