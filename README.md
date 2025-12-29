@@ -1,3 +1,4 @@
 # buffalo-protidin
 
-(Main link)[https://buffaloprotidin.com/]
+[Main link](https://buffaloprotidin.com/)
+
