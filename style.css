@@ -51,7 +51,10 @@ a.link {
     text-decoration: underline;
   }
 }
-/* typography start */
+/* typography start --------------------------------------------- 
+─────────────────────────────────────────────────
+*/
+
 .title_type_1 {
   font-size: 32px;
   font-weight: bold;
@@ -126,8 +129,12 @@ a.link {
   }
 }
 
-/* typography end */
-/* grid layout start */
+/* typography end 
+─────────────────────────────────────────────────
+*/
+/* grid layout start 
+─────────────────────────────────────────────────
+*/
 
 .grid_layout_1 {
   display: grid;
@@ -213,8 +220,12 @@ a.link {
 /* Extra Small Mobile (Below 320px) */
 @media (max-width: 319px) {
 }
-/* grid layout end */
-/* spacing padding margin start */
+/* grid layout end 
+─────────────────────────────────────────────────
+*/
+/* spacing padding margin start 
+─────────────────────────────────────────────────
+*/
 
 .section_two,
 .section_three,
@@ -364,10 +375,16 @@ footer .link {
   }
 }
 
-/* spacing padding margin end */
+/* spacing padding margin end 
+─────────────────────────────────────────────────
+*/
 
-/* navbar style start */
-/* Header Styles */
+/* navbar style start 
+─────────────────────────────────────────────────
+*/
+/* Header Styles 
+─────────────────────────────────────────────────
+*/
 header {
   background-color: var(--bg-color);
   position: sticky;
@@ -381,13 +398,17 @@ header {
   align-items: center;
   padding: 10px 0;
 }
-/* Logo Styles */
+/* Logo Styles 
+─────────────────────────────────────────────────
+*/
 .logo-container {
   display: flex;
   align-items: center;
 }
 
-/* Navigation Styles */
+/* Navigation Styles 
+─────────────────────────────────────────────────
+*/
 .nav-menu {
   display: flex;
   list-style: none;
@@ -421,7 +442,9 @@ header {
   width: 100%;
 }
 
-/* Search Styles */
+/* Search Styles 
+─────────────────────────────────────────────────
+*/
 .search-container {
   display: flex;
   align-items: center;
@@ -460,7 +483,9 @@ header {
   color: var(--primary-color);
 }
 
-/* Mobile Menu */
+/* Mobile Menu 
+─────────────────────────────────────────────────
+*/
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -558,10 +583,12 @@ header {
     display: block;
   }
 }
-/* navbar style end */
+/* navbar style end 
+─────────────────────────────────────────────────
+*/
 
 /* section one start*/
-/* <<<<<<<<>>>>>>>>> */
+/* ─────────────────────────────────────────────────*/
 /* Banner Section */
 .banner {
   overflow: hidden;
@@ -653,7 +680,12 @@ header {
 }
 
 /* section one end
-section two start */
+─────────────────────────────────────────────────
+*/
+/* 
+section two start 
+──────────────────────────────────────────────────
+*/
 
 .section_two {
   display: grid;
@@ -688,6 +720,7 @@ section two start */
 }
 
 /* section two end
+─────────────────────────────────────────────────
 section three start */
 
 .section_three .news_cards .news_cards_item {
@@ -717,7 +750,9 @@ footer .link:nth-child(2) {
   border-inline: 1px solid var(--text-color);
 }
 
-/* details page style  */
+/* details page style  
+─────────────────────────────────────────────────
+*/
 
 .social-icons {
   display: flex;
