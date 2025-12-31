@@ -142,7 +142,7 @@ a.link {
 
 .grid_layout_1 {
   display: grid;
-  grid-template-columns: 1.2fr 0.6fr 300px;
+  grid-template-columns: 1.2fr 0.6fr 0.6fr;
   grid-template-rows: 570px;
   align-items: stretch;
   gap: 20px;
@@ -231,6 +231,11 @@ a.link {
 */
 /* spacing padding margin start 
 ─────────────────────────────────────────────────
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
 */
 
 section {
@@ -302,10 +307,11 @@ nav {
   padding-inline: 0px;
 }
 .footer_content {
-  padding-block: 20px;
+  padding-block-start: 50px;
+  padding-block-end: 40px;
 }
 .footer_text {
-  padding-block-start: 20px;
+  padding-block-start: 25px;
 }
 .footer_links {
   padding-block: 15px;
@@ -338,9 +344,7 @@ nav {
 .social-icons {
   padding-bottom: 40px;
 }
-.fb_weight .fb_frame {
-  display: inline-block;
-}
+
 
 /* Mobile Responsive (481px - 767px) */
 @media (max-width: 767px) {
@@ -392,6 +396,13 @@ nav {
 }
 
 /* spacing padding margin end 
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
+─────────────────────────────────────────────────
 ─────────────────────────────────────────────────
 */
 
@@ -649,16 +660,26 @@ header {
 
 /* Facebook Widget Placeholder */
 .fb_weight {
-  text-align: center;
-  color: var(--text-color);
-  font-size: 18px;
-  border: 2px dashed #e0e0e0;
-  align-self: start;
-  display: flex;
-  z-index: 1;
+  width: 100%;
+  max-width: 500px; /* Facebook-এর maximum limit */
+  margin: 0 auto;   /* center করার জন্য optional */
 }
-.fb_weight .fb_frame {
-  display: inline-block;
+
+#fb-container {
+  width: 100%;
+}
+
+#fb-iframe {
+  width: 100% !important;
+  height: 550px !important;
+  border: none;
+}
+
+/* Mobile-এ ছোট স্ক্রিনে height কমানোর জন্য optional */
+@media (max-width: 767px) {
+  #fb-iframe {
+    height: 600px !important; /* অথবা আপনার পছন্দমতো adjust করুন */
+  }
 }
 
 /* Tablet Responsive (768px - 968px) */

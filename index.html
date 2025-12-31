@@ -176,21 +176,11 @@
           </div>
         </div>
 
-        <div class="fb_weight">
-          <div class="fb_frame">
-            <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbuffaloprotidin&amp;tabs=timeline&amp;width=300&amp;height=550&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true"
-              width="100%"
-              height="550"
-              style="border: none; overflow: hidden"
-              scrolling="no"
-              frameborder="0"
-              allowfullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            >
-            </iframe>
-          </div>
-        </div>
+   <div class="fb_weight">
+    <div class="fb_frame" id="fb-container">
+        <iframe id="fb-iframe" src="" width="100%" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+</div>
       </div>
 
       <div class="section_two">
@@ -742,5 +732,32 @@
         });
       });
     </script>
+
+    <script>
+function updateFBPlugin() {
+    var container = document.getElementById('fb-container');
+    var iframe = document.getElementById('fb-iframe');
+    
+    var containerWidth = container.offsetWidth;
+    
+    // Facebook limit: min 280px, max 500px
+    if (containerWidth < 280) containerWidth = 280;
+    if (containerWidth > 500) containerWidth = 500;
+    
+    var newSrc = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbuffaloprotidin&tabs=timeline&width=" + containerWidth + "&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true";
+    
+    iframe.src = newSrc;
+    iframe.width = containerWidth;
+}
+
+// Initial load
+updateFBPlugin();
+
+// Resize-এ update
+window.addEventListener('resize', function() {
+    clearTimeout(window.fbResizeTimeout);
+    window.fbResizeTimeout = setTimeout(updateFBPlugin, 200); // debounce for performance
+});
+</script>
   </body>
 </html>
