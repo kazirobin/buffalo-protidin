@@ -876,7 +876,7 @@ footer start*/
   border: 4px dashed var(--color-gray-light);
   display: grid;
   grid-template-columns: 1fr 0.35fr;
-  margin-block: 20px;
+  margin-block-start: 20px;
 }
 
 
@@ -940,6 +940,16 @@ footer start*/
   font-size: 10px;
   padding: 14px;
   color: var(--text-color);
+}
+.padding_b_none{
+  padding-block-end: 0px;
+  border: 0px;
+}
+.details_2_main_section{
+  .grid_layout_4{
+    margin-block-start: 0px;
+    border-top: 0px;
+  }
 }
 /* Tablet Responsive (768px - 968px) */
 @media (max-width: 968px) {
