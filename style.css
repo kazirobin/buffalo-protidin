@@ -3,7 +3,9 @@
   --text-color: #030202;
   --primary-color: #1f1f1f;
   --bg-color: #ffffff;
+  --bg-color-gray: #F8F9FA;
   --color-blue-deep: #0e4f97;
+  --color-blue-dark:#202D52;
   --color-blue: #0d6efd;
   --color-gray: #333339;
   --color-gray-light: #e5e5e5;
@@ -21,14 +23,13 @@ nav {
   text-align: center;
 }
 body {
-  max-width: 1400px;
   font-family: "SolaimanLipi", sans-serif;
   margin: 0 auto;
   color: var(--text-color);
   background: var(--bg-color);
 }
 section {
-  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   border-bottom: 2px solid var(--color-gray-light);
 }
@@ -229,10 +230,9 @@ a.link {
 /* spacing padding margin start 
 ─────────────────────────────────────────────────
 */
-body {
-  padding-inline: 15px;
-}
+
 section {
+  padding-inline: 15px;
   padding-block-start: 20px;
   padding-block-end: 50px;
 }
@@ -248,7 +248,7 @@ nav {
 }
 .navbar {
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 .nav-link {
   padding: 8px 0;
@@ -329,15 +329,14 @@ nav {
 
 /* Mobile Responsive (481px - 767px) */
 @media (max-width: 767px) {
-  body {
-    padding-inline: 12px;
-  }
+
   section {
-    padding: 15px;
+    padding-inline: 12px;
+    padding-block: 15px;
   }
 
   .navbar {
-    padding: 15px 20px;
+    padding: 15px 12px;
   }
   .news_list_1_title {
     padding: 10px 15px;
@@ -353,11 +352,10 @@ nav {
 
 /* Small Mobile Responsive (320px - 480px) */
 @media (max-width: 480px) {
-  body {
-    padding-inline: 10px;
-  }
+
   section {
-    padding: 10px;
+    padding-inline: 10px;
+    padding-block: 10px;
   }
   .news_list_1_title {
     padding: 10px 12px;
@@ -372,7 +370,7 @@ nav {
 
 /* Extra Small Mobile (Below 320px) */
 @media (max-width: 319px) {
-  body {
+  section {
     padding-inline: 8px;
   }
   .news_list_1_item {
@@ -739,12 +737,40 @@ footer start*/
   width: 200px;
   margin:0 auto
 }
+.footer_content {
+  padding-block: 20px;
+  border-top: 1px solid var(--color-gray-light);
+  border-bottom: 1px solid var(--color-gray-light);
+  background-color: var(--bg-color-gray);
+}
 .footer_text{
   display: block;
-  padding-block: 20px;
+  padding-block-start: 20px;
   text-align: center;
-  border-bottom: 1px solid var(--color-gray-light);
+
 }
+.footer_links {
+  display: flex;
+  background-color: var(--bg-color-gray);
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-block: 15px;
+  .link:not(:last-child) {
+    border-right: 1px solid var(--color-gray);
+    padding-right: 10px;
+  }
+}
+.footer_copyright {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  padding-block: 10px;
+  font-size: 14px;
+  background-color:var(--color-blue-dark);
+  color: var(--bg-color);
+}
+
 
 /* details page style  
 ─────────────────────────────────────────────────
