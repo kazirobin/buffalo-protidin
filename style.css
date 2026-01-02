@@ -91,6 +91,7 @@ a.link {
 .news_list_2 {
   background-color: var(--bg-color-gray);
   padding: 10px;
+  padding-block-start:0px ;
 }
 .news_list_2_item:not(:first-child) {
   border-bottom: 2px solid var(--color-gray-light);
@@ -331,7 +332,8 @@ nav {
 .section_three .news_cards .news_cards_item {
   padding-block: 10px;
 }
-.news_list_2_item {
+.news_list_2_item:not(:last-child)
+ {
   padding-block-start: 10px;
 }
 
@@ -991,3 +993,4 @@ footer start*/
   }
 }
 /* details 2 page style end */
+.pt-none{padding-block-start: 0px !important;}
