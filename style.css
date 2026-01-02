@@ -69,6 +69,7 @@ a.link {
 }
 .section_title {
   border-left: 4px solid var(--color-blue);
+  font-size: 26px;
 }
 .section_title .link {
   font-size: 26px;
