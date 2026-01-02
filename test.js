@@ -3,6 +3,7 @@ function showName(name) {
     console.log("Name:", name);
 }
 
+
 // Higher-order function: accepts another function as a parameter
 function withAge(fn, age) {
     // Call the function passed in (fn) with a name
