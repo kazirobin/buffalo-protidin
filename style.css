@@ -47,8 +47,10 @@ a.link {
   color: var(--text-color);
   display: block;
   transition: color 0.3s;
+  line-height: 1.6;
   &:hover {
     text-decoration: underline;
+    text-underline-offset: 8px;
   }
 }
 /* typography start --------------------------------------------- 
@@ -74,11 +76,18 @@ a.link {
 }
 .text_type_1 {
   font-size: 19px;
-  line-height: 1.8;
 }
 a.link {
   font-size: 20px;
   font-weight: 500;
+}
+.news_list_2{
+  background-color: var(--bg-color-gray);
+  padding: 10px;
+}
+.news_list_2_item:not(:first-child) {
+  border-bottom: 2px solid var(--color-gray-light);
+  padding-block-end: 10px;
 }
 
 /* Tablet Responsive (768px - 968px) */
@@ -736,7 +745,7 @@ section two start
 
 .section_two {
   display: grid;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-gray);
   z-index: 3;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -744,6 +753,9 @@ section two start
 
   .link:not(:last-child) {
     border-right: 2px solid var(--color-blue);
+  }
+  a h4{
+    line-height: 1.5;
   }
 }
 /* Responsive Styles */
