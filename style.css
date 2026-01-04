@@ -91,6 +91,7 @@ a.link {
 .news_list_2 {
   background-color: var(--bg-color-gray);
   padding-block-start:0px ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .news_list_2_item:not(:first-child) {
   border-bottom: 2px solid var(--color-gray-light);
