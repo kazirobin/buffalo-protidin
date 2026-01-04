@@ -90,7 +90,6 @@ a.link {
 }
 .news_list_2 {
   background-color: var(--bg-color-gray);
-  padding: 10px;
   padding-block-start:0px ;
 }
 .news_list_2_item:not(:first-child) {
@@ -113,7 +112,7 @@ a.link {
     font-size: 24px;
   }
   .text_type_1 {
-    font-size: 15px;
+    font-size: 19px;
     line-height: 1.7;
   }
   .link {
@@ -396,7 +395,12 @@ nav {
   .news_list_1_item {
     padding: 15px 18px;
   }
-
+.section_two .link {
+  padding: 10px 0px;
+}
+  .news_list_1 > .news_list_1_item {
+  padding: 10px 0px;
+}
   .fb_weight {
     padding: 30px 15px;
   }
@@ -414,6 +418,9 @@ nav {
   .news_list_1_item {
     padding: 13px 15px;
   }
+  .news_list_1 > .news_list_1_item {
+  padding: 6px 0px;
+}
   .fb_weight {
     padding: 25px 12px;
   }
