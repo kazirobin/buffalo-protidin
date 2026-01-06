@@ -681,7 +681,7 @@ header {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--color-gray);
+  border-left: 1px solid var(--color-gray-light);
   height: 100%; /* Take full height of parent */
 }
 
