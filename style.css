@@ -81,7 +81,7 @@ a.link {
   font-weight: 700;
 }
 .text_type_1 {
-  font-size: 19px;
+  font-size: 26px;
   line-height: 1.8;
 }
 a.link {
@@ -330,7 +330,7 @@ nav {
   padding: 18px 20px;
 }
 .section_two .link {
-  padding: 20px;
+  padding: 20px 5px;
 }
 
 .section_three .news_cards .news_cards_item {
