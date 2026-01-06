@@ -279,6 +279,10 @@ section {
 }
 .title_type_1 {
   padding-block-end: 10px;
+  /* padding-inline: 10px; */
+}
+.banner{
+  padding: 20px;
 }
 .text_type_1:not(:last-child) {
   padding-block-end: 10px;
