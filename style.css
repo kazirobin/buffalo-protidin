@@ -282,7 +282,7 @@ section {
   /* padding-inline: 10px; */
 }
 .banner{
-  padding: 20px;
+  padding-inline-start: 20px;
 }
 .text_type_1:not(:last-child) {
   padding-block-end: 10px;
