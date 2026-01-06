@@ -672,23 +672,53 @@ header {
 }
 
 /* News List Section */
+
 .news_list_1 {
-  overflow-y: auto;
   align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Take full height of parent */
+}
+
+.news_list_1_items {
+  flex: 1; /* Take remaining space */
+  overflow-y: auto; /* Auto shows scrollbar only when needed */
+  max-height: 480px; /* Limit height to show scroll */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #999 #f1f1f1; /* For Firefox */
+  margin-top: 30px;
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+.news_list_1_items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news_list_1_items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.news_list_1_items::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+.news_list_1_items::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 .news_list_1_title {
   background: var(--color-blue-deep);
   color: var(--bg-color);
   font-size: 22px;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+
 }
 
 .news_list_1_item {
   border-bottom: 1px solid var(--color-gray-light);
   transition: background 0.3s;
+  padding: 10px;
 }
 .news_list_1_item:hover {
   background: var(--bg-color-gray);
