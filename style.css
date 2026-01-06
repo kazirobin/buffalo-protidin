@@ -681,11 +681,11 @@ header {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--color-gray-light);
   height: 100%; /* Take full height of parent */
 }
 
 .news_list_1_items {
+  border-left: 1px solid var(--color-gray-light);
   flex: 1; /* Take remaining space */
   overflow-y: auto; /* Auto shows scrollbar only when needed */
   max-height: 480px; /* Limit height to show scroll */
