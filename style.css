@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/solaimanlipi");
+ @import url("https://fonts.cdnfonts.com/css/solaimanlipi");
 :root {
   --text-color: #030202;
   --primary-color: #1f1f1f;
@@ -279,10 +279,14 @@ section {
 }
 .title_type_1 {
   padding-block-end: 10px;
-  /* padding-inline: 10px; */
+  padding-inline: 10px;
 }
 .banner{
   padding-inline-start: 20px;
+}
+.text_type_1{
+
+  padding-inline: 10px;
 }
 .text_type_1:not(:last-child) {
   padding-block-end: 10px;
@@ -346,8 +350,8 @@ nav {
   padding-inline: 0px;
 }
 .footer_content {
-  padding-block-start: 50px;
-  padding-block-end: 40px;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
 }
 .footer_text {
   padding-block-start: 25px;
@@ -691,7 +695,7 @@ header {
   max-height: 480px; /* Limit height to show scroll */
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: #999 #f1f1f1; /* For Firefox */
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 /* For Webkit browsers (Chrome, Safari, Edge) */
