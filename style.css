@@ -95,9 +95,16 @@ a.link {
 .news_list_2 {
   padding-block-start: 0px;
 }
-.news_list_2_item:not(:first-child) {
+.news_list_2_item {
   border-bottom: 2px solid var(--color-gray-light);
   padding-block-end: 10px;
+}
+.news_list_2_item:first-child,
+.news_list_2_item:last-child
+ {
+  border-bottom: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 10px;
 }
 
 /* Tablet Responsive (768px - 968px) */
