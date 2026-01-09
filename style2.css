@@ -260,6 +260,9 @@ a.link {
     display: flex;
     flex-direction: column-reverse;
   }
+  .grid_layout_4.details_page {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 767px) {
@@ -874,6 +877,11 @@ header {
 /* ====================================
    11. Details Page Styles
    ==================================== */
+
+/* Make FB widget taller on details page only */
+body:has(.grid_layout_4) .fb_weight #fb-iframe {
+  height: 1000px !important;
+}
 .details_ads_left {
   display: flex;
   flex-direction: column;
@@ -942,4 +950,36 @@ header {
   padding: 6px 8px;
   margin: 6px;
   display: inline-block;
+}
+
+
+
+
+
+/* Facebook Widget Base */
+.fb_weight {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#fb-iframe {
+  width: 100% !important;
+  border: none;
+}
+
+/* Details page-এ extra tall fallback (if needed) */
+body:has(.grid_layout_4) #fb-iframe {
+  min-height: 1000px !important;
+}
+
+/* Index page-এ normal */
+body:not(:has(.grid_layout_4)) #fb-iframe {
+  height: 600px !important;
+}
+
+@media (max-width: 968px) {
+  #fb-iframe {
+    height: 700px !important;
+  }
 }
