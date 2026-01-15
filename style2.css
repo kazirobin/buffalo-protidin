@@ -387,7 +387,10 @@ img.img:not(.logo) {
 }
 
 .section_two .link {
-  padding: 20px 5px;
+  padding: 20px;
+}
+.section_two .link:first-child {
+  padding-inline-start: 30px;
 }
 
 .section_two {
@@ -879,15 +882,17 @@ header {
    ==================================== */
 
 /* Make FB widget taller on details page only */
-body:has(.grid_layout_4) .fb_weight #fb-iframe {
-  height: 1000px !important;
-}
+
 .details_ads_left {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
+.details_page .img {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding-block-end: 30px;
+}
 .social-icons {
   display: flex;
   gap: 5px;
@@ -952,10 +957,6 @@ body:has(.grid_layout_4) .fb_weight #fb-iframe {
   display: inline-block;
 }
 
-
-
-
-
 /* Facebook Widget Base */
 .fb_weight {
   width: 100%;
@@ -968,12 +969,12 @@ body:has(.grid_layout_4) .fb_weight #fb-iframe {
   border: none;
 }
 
-/* Details page-এ extra tall fallback (if needed) */
+/* Details page-এ extra tall fallback (if needed) 
 body:has(.grid_layout_4) #fb-iframe {
   min-height: 1000px !important;
 }
 
-/* Index page-এ normal */
+ Index page-এ normal 
 body:not(:has(.grid_layout_4)) #fb-iframe {
   height: 600px !important;
 }
@@ -983,3 +984,4 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
     height: 700px !important;
   }
 }
+*/

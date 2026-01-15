@@ -377,53 +377,6 @@
     </footer>
 
     <script src="./script.js"></script>
-    <script>
-      // fb-plugin.js
-
-function updateFBPlugin() {
-  const container = document.getElementById("fb-container");
-  if (!container) return;
-
-  const iframe = document.getElementById("fb-iframe");
-  if (!iframe) return;
-
-  let containerWidth = container.offsetWidth;
-  if (containerWidth < 280) containerWidth = 280;
-  if (containerWidth > 500) containerWidth = 500;
-
-  // Detect if we are on details page (has .grid_layout_4)
-  const isDetailsPage = document.querySelector(".grid_layout_4") !== null;
-
-  // Dynamic height: 600px on index, 1100px on details page
-  const pluginHeight = isDetailsPage ? 1100 : 600;
-
-  const pageUrl = "https://www.facebook.com/buffaloprotidin"; // আপনার পেজ URL
-
-  const newSrc =
-    "https://www.facebook.com/plugins/page.php?" +
-    "href=" + encodeURIComponent(pageUrl) +
-    "&tabs=timeline" +
-    "&width=" + containerWidth +
-    "&height=" + pluginHeight +
-    "&small_header=false" +
-    "&adapt_container_width=true" +
-    "&hide_cover=false" +
-    "&show_facepile=true";
-
-  iframe.src = newSrc;
-  iframe.width = containerWidth + "px";
-  iframe.height = pluginHeight + "px"; // Optional: direct height set
-}
-
-// Run on load
-document.addEventListener("DOMContentLoaded", updateFBPlugin);
-
-// Update on resize
-let resizeTimeout;
-window.addEventListener("resize", () => {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(updateFBPlugin, 200);
-});
-    </script>
+ <script src="./updateFBPlugin.js"></script>
   </body>
 </html>

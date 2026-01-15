@@ -1,0 +1,28 @@
+# JavaScript Topics List
+
+1. JavaScript Scopes
+2. JavaScript var, let, const - Not so simple!
+3. JavaScript Closures are not that scary!
+4. JavaScript Hoisting - No more confusion!
+5. Prototype - the foundation of JavaScript
+6. JavaScript Prototype Inheritance & ES6 Class
+7. JavaScript 'this' keyword - .call(), .apply() and .bind()
+8. Execution Context - How JavaScript runs your code
+9. JavaScript Higher Order Functions are easy
+10. Asynchronous JavaScript - callbacks, promises and async-await
+11. Recursion in JavaScript
+12. JavaScript Event Loop & its functions
+13. Primitive vs Reference - What's the difference
+14. Best Practices of JavaScript - Part 1
+15. XMLHttpRequest - AJAX
+16. ES6 Symbols - Why are they awesome
+17. ES6 Iterators - the Essential Guide
+18. ES6 Generators - What | Why | How
+19. What is Currying in JavaScript
+20. Debounce Function in JavaScript
+21. Memoization - A Powerful Technique for JavaScript Optimization
+22. Intersection Observer API in JavaScript
+23. Is javascript single threaded? - Web Workers API explained
+24. Mastering JavaScript Event Delegation: Simplifying DOM Interaction for Web Developers!
+25. Mastering JavaScript Event Propagation - Bubbling vs. Capturing Explained
+26. JavaScript NaN Explained - Unraveling the Mystery
