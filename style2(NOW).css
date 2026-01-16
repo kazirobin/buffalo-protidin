@@ -999,9 +999,7 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
 */
 
 /* details page 2.1  */
-.details_page{
 
-}
 .grid_layout_2.details_page {
   max-height: 100vh;
   overflow-y: scroll;
