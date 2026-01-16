@@ -34,6 +34,7 @@ body {
 
 img.img {
   width: 100%;
+  padding: 5px;
   height: auto;
   display: block;
   object-fit: cover;
@@ -316,11 +317,15 @@ a.link {
 section {
   max-width: 1390px;
   padding-inline: 15px;
-  padding-block: 20px 50px;
   margin: 0 auto;
-  border-bottom: 2px solid var(--color-gray-light);
 }
-
+.section_footer{
+  padding-block: 20px;
+}
+.divider {
+  padding-block: 10px 0;
+  border-top: 2px solid var(--color-gray-light);
+}
 img.img:not(.logo) {
   margin-block-end: 20px;
 }
@@ -1008,9 +1013,11 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
     height: fit-content;
     padding: 7px;
     border-radius: 7px;
-    .news_cards_items{
+    news_list_1_items {
+
       overflow: hidden;
     }
+   
   }
   .details_content .title_type_1 {
     padding-block-end: 0px;
