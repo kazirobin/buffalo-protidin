@@ -122,6 +122,9 @@ h3 {
 a.link {
   font-size: 20px;
   font-weight: 500;
+  .text_type_1{
+    font-size: 20px;
+  }
 }
 
 .news_list_1_title {
@@ -996,10 +999,19 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
 */
 
 /* details page 2.1  */
-.grid_layout_2 .details {
+.details_page{
+
+}
+.grid_layout_2.details_page {
   max-height: 100vh;
   overflow-y: scroll;
   scrollbar-width: none;
+  .news_list_1{
+    height: fit-content;
+    padding: 7px;
+    border: 1px solid var(--color-gray);
+    border-radius: 7px;
+  }
   .details_content .title_type_1 {
     padding-block-end: 0px;
   }
