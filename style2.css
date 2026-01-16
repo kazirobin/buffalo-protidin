@@ -1014,6 +1014,7 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
   .times {
     display: flex;
     .text_type_1 {
+      
       font-size: 16px;
     }
   }
