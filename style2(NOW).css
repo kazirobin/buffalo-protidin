@@ -1003,6 +1003,13 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
   .details_content .title_type_1{
     padding-block-end: 0px;
   }
+  .details_tags{
+    .tag{
+      .link{
+        font-size: 20px;
+      }
+    }
+  }
 }
 .details_date {
   display: flex;
