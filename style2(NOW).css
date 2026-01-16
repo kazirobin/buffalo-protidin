@@ -998,6 +998,8 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
 /* details page 2.1  */
 .grid_layout_2 .details {
   max-height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
   .details_content .title_type_1{
     padding-block-end: 0px;
   }
