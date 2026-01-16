@@ -40,7 +40,9 @@ img.img {
 }
 
 img.logo {
-  width: 130px;
+  width: 7.5%;
+  object-fit: contain;
+  object-position: left center;
 }
 
 a.link {
@@ -202,7 +204,7 @@ a.link {
    ==================================== */
 .grid_layout_1 {
   display: grid;
-  grid-template-columns: 1.2fr 0.6fr 0.6fr;
+  grid-template-columns: 1.3fr 0.6fr 0.6fr;
   grid-template-rows: 570px;
   align-items: stretch;
   gap: 25px;
@@ -309,7 +311,7 @@ a.link {
    5. Spacing (Padding & Margin)
    ==================================== */
 section {
-  max-width: 1400px;
+  max-width: 1390px;
   padding-inline: 15px;
   padding-block: 20px 50px;
   margin: 0 auto;
@@ -342,7 +344,7 @@ img.img:not(.logo) {
 }
 
 .navbar {
-  padding: 10px 20px;
+  padding: 15px;
 }
 
 .nav-item {
@@ -471,8 +473,8 @@ img.img:not(.logo) {
     padding: 10px 0;
   }
   .section_two .link:first-child {
-  padding-inline-start: 0px;
-}
+    padding-inline-start: 0px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -529,9 +531,7 @@ header {
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: contents;
 }
 
 .nav-menu {
@@ -1000,12 +1000,12 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
   max-height: 100vh;
   overflow-y: scroll;
   scrollbar-width: none;
-  .details_content .title_type_1{
+  .details_content .title_type_1 {
     padding-block-end: 0px;
   }
-  .details_tags{
-    .tag{
-      .link{
+  .details_tags {
+    .tag {
+      .link {
         font-size: 20px;
       }
     }
@@ -1015,13 +1015,20 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .social-icons{
-    .icon:last-child{
+  padding-block-start: 10px;
+  padding-block-end: 20px;
+  .social-icons {
+    .icon:last-child {
       margin-top: 4px;
     }
   }
   .times {
     display: flex;
+    h4{
+      padding-block-end: 0px;
+    }
+ 
+   
     .text_type_1 {
       padding-inline: 0px;
       padding-inline-start: 10px;
