@@ -1008,7 +1008,6 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
   .social-icons{
     .icon:last-child{
       margin-top: 4px;
@@ -1017,8 +1016,9 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
   .times {
     display: flex;
     .text_type_1 {
-      
-      font-size: 16px;
+      padding-inline: 0px;
+      padding-inline-start: 10px;
+      font-size: 21px;
     }
   }
 }
