@@ -390,7 +390,7 @@ img.img:not(.logo) {
   padding: 20px;
 }
 .section_two .link:first-child {
-  padding-inline-start: 30px;
+  padding-inline-start: 40px;
 }
 
 .section_two {
@@ -470,6 +470,9 @@ img.img:not(.logo) {
   .section_two .link {
     padding: 10px 0;
   }
+  .section_two .link:first-child {
+  padding-inline-start: 0px;
+}
 }
 
 @media (max-width: 480px) {
