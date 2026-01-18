@@ -152,6 +152,9 @@ a.link {
   .text_type_1 {
     font-size: 15px;
   }
+  img.logo {
+  width: 15%;
+}
 }
 
 @media (max-width: 767px) {
@@ -168,6 +171,9 @@ a.link {
   .link {
     font-size: 14px;
   }
+  img.logo {
+  width: 20%;
+}
 }
 
 @media (max-width: 480px) {
@@ -198,9 +204,10 @@ a.link {
   .link {
     font-size: 12px;
   }
-  img.logo {
-    width: 150px !important;
-  }
+
+   img.logo {
+  width: 35%;
+}
 }
 
 /* ====================================
