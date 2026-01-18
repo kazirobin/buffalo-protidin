@@ -123,7 +123,7 @@ h3 {
 a.link {
   font-size: 20px;
   font-weight: 500;
-  .text_type_1{
+  .text_type_1 {
     font-size: 20px;
   }
 }
@@ -234,6 +234,12 @@ a.link {
   align-items: stretch;
   gap: 25px;
 }
+.grid_layout_5 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: stretch;
+  gap: 25px;
+}
 
 /* Grid Responsive */
 @media (max-width: 968px) {
@@ -266,8 +272,18 @@ a.link {
     display: flex;
     flex-direction: column-reverse;
   }
-  .grid_layout_4.details_page {
+  .grid_layout_5 {
+    display: flex;
     flex-direction: column;
+    .left {
+      order: 2;
+    }
+    .center {
+      order: 1;
+    }
+    .right {
+      order: 3;
+    }
   }
 }
 
@@ -319,7 +335,7 @@ section {
   padding-inline: 15px;
   margin: 0 auto;
 }
-.section_footer{
+.section_footer {
   padding-block: 20px;
 }
 .divider {
@@ -894,22 +910,6 @@ header {
 
 /* Make FB widget taller on details page only */
 
-.details_ads_left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.details_page .img {
-  max-width: fit-content;
-  margin: 0 auto;
-  padding-block-end: 30px;
-}
-.social-icons {
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-}
-
 .icon {
   width: 35px;
   height: 35px;
@@ -986,38 +986,19 @@ header {
   border: none;
 }
 
-/* Details page-এ extra tall fallback (if needed) 
-body:has(.grid_layout_4) #fb-iframe {
-  min-height: 1000px !important;
-}
-
- Index page-এ normal 
-body:not(:has(.grid_layout_4)) #fb-iframe {
-  height: 600px !important;
-}
-
-@media (max-width: 968px) {
-  #fb-iframe {
-    height: 700px !important;
-  }
-}
-*/
-
 /* details page 2.1  */
 
 .grid_layout_2.details_page {
   max-height: 100vh;
   overflow-y: scroll;
   scrollbar-width: none;
-  .news_list_1{
+  .news_list_1 {
     height: fit-content;
     padding: 7px;
     border-radius: 7px;
     news_list_1_items {
-
       overflow: hidden;
     }
-   
   }
   .details_content .title_type_1 {
     padding-block-end: 0px;
@@ -1043,15 +1024,56 @@ body:not(:has(.grid_layout_4)) #fb-iframe {
   }
   .times {
     display: flex;
-    h4{
+    h4 {
       padding-block-end: 0px;
     }
- 
-   
+
     .text_type_1 {
       padding-inline: 0px;
       padding-inline-start: 10px;
       font-size: 21px;
+    }
+  }
+}
+.left {
+  .times {
+    margin-block-start: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    .text_type_1 {
+      font-size: 20px;
+      padding-block-end: 20px;
+    }
+  }
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    .icon:last-child {
+      padding-block-start: 5px;
+    }
+  }
+  .more_news {
+    margin-block-start: 40px;
+    .more_news_items {
+      max-height: max-content;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .more_news_item {
+        border-bottom: 1px solid var(--color-gray-light);
+        padding-block-end: 10px;
+      }
+    }
+  }
+}
+.right {
+  .news_list_1 {
+    margin-block-start: 40px;
+    .news_list_1_items {
+      border: 0px;
+      max-height: max-content;
     }
   }
 }
