@@ -1050,6 +1050,7 @@ header {
     .text_type_1 {
       font-size: 20px;
       padding-block-end: 20px;
+      padding-inline: 0px;
     }
   }
   .social-icons {
