@@ -876,6 +876,7 @@ header {
    10. Footer
    ==================================== */
 .footer_content {
+  margin-block-start: 30px;  ;
   border-top: 1px solid var(--color-gray-light);
   border-bottom: 1px solid #c9c9c9;
   background-color: var(--bg-color-gray);
