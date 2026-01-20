@@ -142,6 +142,9 @@ a.link {
 
 .tag .link {
   font-size: 19px;
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 /* Responsive Typography Adjustments */
