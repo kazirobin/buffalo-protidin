@@ -1066,13 +1066,13 @@ header {
     gap: 8px;
     align-items: center;
     justify-content: center;
-    padding-block-start: 20px;
+    padding-block: 20px;
     .icon:last-child {
       padding-block-start: 5px;
     }
   }
   .more_news {
-    margin-block-start: 20px;
+    margin-block-start: 10px;
     .more_news_items {
       max-height: max-content;
       display: flex;
